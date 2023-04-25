@@ -29,7 +29,7 @@ class MainWeatherScreen extends HookWidget {
     final weather = useWeather(context);
 
     feedback(data) {
-      return data ?? 'Unknown';
+      return '${data ?? 'Unknown'}';
     }
 
     return SafeArea(

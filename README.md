@@ -2,4 +2,4 @@
 
 A Flutter weather app
 
-![weather-app](https://user-images.githubusercontent.com/84883298/234373485-0657f998-0965-4595-bec8-dc083a1f5ae2.jpeg)
+![WEATHER-APP](https://user-images.githubusercontent.com/84883298/234374856-4ed1948f-8eb5-42ca-82fb-a9a9a7374170.svg)

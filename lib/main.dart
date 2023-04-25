@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:weather/screens/main_weather_screen.dart';
+import 'package:weather/themes/main.dart';
 
-void main() {
+void main() async {
+  await dotenv.load();
   runApp(const MyApp());
 }
 
@@ -13,11 +17,12 @@ class MyApp extends HookWidget {
     return MaterialApp(
       title: 'Weather',
       debugShowCheckedModeBanner: false,
+      theme: mainTheme,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Weather'),
         ),
-        body: Text('See weather.'),
+        body: MainWeatherScreen(),
       ),
     );
   }

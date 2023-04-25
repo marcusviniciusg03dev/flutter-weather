@@ -7,13 +7,13 @@ class MainWeatherScreen extends HookWidget {
 
   String direction(degrees) {
     if (degrees < 90 || degrees == 360) {
-      return 'north';
+      return 'North';
     } else if (degrees < 180) {
       return 'East';
     } else if (degrees < 270) {
-      return 'south';
+      return 'South';
     } else {
-      return 'west';
+      return 'West';
     }
   }
 
@@ -51,7 +51,7 @@ class MainWeatherScreen extends HookWidget {
               Text(
                 '${feedback(weather.data['name'])}, ${feedback(weather.data['sys']?['country'])}',
                 style: theme.textTheme.headlineMedium
-                    ?.copyWith(color: const Color.fromARGB(255, 255, 71, 25)),
+                    ?.copyWith(color: Color.fromARGB(255, 245, 245, 245)),
               ),
               ClipRRect(
                   child: Image.network(

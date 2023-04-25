@@ -21,8 +21,9 @@ class MyApp extends HookWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Weather'),
+          centerTitle: true,
         ),
-        body: MainWeatherScreen(),
+        body: const MainWeatherScreen(),
       ),
     );
   }
